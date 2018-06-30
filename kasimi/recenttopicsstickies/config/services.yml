@@ -1,0 +1,7 @@
+services:
+    kasimi.recenttopicsstickies.listener:
+        class: kasimi\recenttopicsstickies\event\main_listener
+        arguments:
+            - '@dbal.conn'
+        tags:
+            - { name: event.listener }
